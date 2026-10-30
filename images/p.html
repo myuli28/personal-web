@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Petugas Piket</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Container untuk memutar tabel sesuai orientasi gambar */
+        .table-container {
+            transform: rotate(-90deg); /* Putar 90 derajat berlawanan arah jarum jam */
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 4px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 700px;
+            margin-bottom: 15px;
+        }
+
+        th, td {
+            border: 1px solid #7ea7cc;
+            padding: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        /* Warna header kolom paling kanan */
+        th {
+            background-color: #6495ed;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Warna baris Hari (Senin & Selasa) */
+        .row-header {
+            background-color: #b0e0e6;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+
+        .left-text {
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .note {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 13px;
+            color: #333;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Hari</th>
+                <th>Waktu</th>
+                <th>Nama Petugas Piket</th>
+                <th>Area Tugas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Baris Senin -->
+            <tr>
+                <td class="row-header" rowspan="3">Senin</td>
+                <td class="center-text" rowspan="3">06:30 - 07:00</td>
+                <td class="left-text">1. Andi Pratama<br>2. Siti Rahma</td>
+                <td class="left-text">Menyapu & Mengepel Kelas</td>
+            </tr>
+            <tr>
+                <td class="left-text">3. Budi Santoso</td>
+                <td class="left-text">Membersihkan Papan Tulis</td>
+            </tr>
+            
+            <!-- Baris Selasa -->
+            <tr>
+                <td class="row-header" rowspan="2">Selasa</td>
+                <td class="center-text" rowspan="2">06:30 - 07:00</td>
+                <td class="left-text">1. Dewi Lestari<br>2. Rian Hidayat</td>
+                <td class="left-text">Menyapu & Mengepel Kelas</td>
+            </tr>
+            <tr>
+                <td class="left-text">3. Joko Widodo</td>
+                <td class="left-text">Menyiram Tanaman Depan Kelas</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="note">
+        Catatan: Petugas piket wajib datang 30 menit sebelum bel masuk berbunyi!
+    </div>
+</div>
+
+</body>
+</html>

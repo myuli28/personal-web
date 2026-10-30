@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Buku Tamu - Personal Web</title>
+</head>
+<!-- Latar belakang abu-abu terang modern (#e5e7eb) -->
+<body bgcolor="#e5e7eb" text="#1f2937">
+
+    <table width="750" align="center" bgcolor="#ffffff" cellpadding="30" cellspacing="0" border="0">
+        <tr>
+            <td>
+                <!-- HEADER AREA (Dilengkapi logo di sisi kiri dan kanan) -->
+                <table width="100%" bgcolor="#1e3a8a" border="0" cellpadding="15" cellspacing="0">
+                    <tr>
+                        <!-- Logo Kiri -->
+                        <td width="60" align="center" valign="middle">
+                            <img src="images/logo.jpeg" alt="Logo Kiri" width="50" height="50" border="0">
+                        </td>
+                        
+                        <!-- Judul Utama di Tengah -->
+                        <td align="center" valign="middle">
+                            <font color="#ffffff" size="6" face="Helvetica, Arial, sans-serif">
+                                <b>JURNAL DIGITAL SAYA</b>
+                            </font>
+                        </td>
+                        
+                        <!-- Logo Kanan -->
+                        <td width="60" align="center" valign="middle">
+                            <img src="images/skaduta.jpeg" alt="Logo Kanan" width="50" height="50" border="0">
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- NAVIGASI (Abu-abu muda #f8fafc dengan warna teks biru) -->
+                <table width="100%" bgcolor="#f8fafc" border="0" cellpadding="10" cellspacing="0">
+                    <tr>
+                        <td align="center">
+                            <font face="Arial, sans-serif" size="2">
+                                <a href="index.html"><font color="#3b82f6">🏠 BERANDA</font></a> &nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="yprofil.html"><font color="#3b82f6">👤 PROFIL</font></a> &nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="ygaleri.html"><font color="#3b82f6">🖼️ GALLERY</font></a> &nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="yartikel.html"><font color="#3b82f6">📄 ARTIKEL</font></a> &nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="ybukutamu.html"><font color="#1d4ed8">✍️ <b>[ BUKU TAMU ]</b></font></a>
+                            </font>
+                        </td>
+                    </tr>
+                </table>
+
+                <br><br>
+
+                <!-- KONTEN BUKU TAMU -->
+                <font face="Georgia, serif" size="5"><font color="#1e3a8a"><b>Registrasi Buku Tamu Interaktif</b></font></font>
+                <!-- Garis pemisah biru muda (#60a5fa) -->
+                <hr size="2" color="#60a5fa" align="left" width="100">
+                <br>
+                <p>Silakan tinggalkan identitas dan impresi Anda setelah mengunjungi ruang digital ini.</p>
+                <br>
+
+                <!-- Form dengan Latar Belakang Abu-abu Lembut (#f1f5f9) -->
+                <form action="#" method="POST">
+                    <table width="100%" border="0" cellpadding="12" cellspacing="0" bgcolor="#f1f5f9">
+                        <tr>
+                            <td width="28%"><font color="#1e3a8a"><b><label for="nama">Nama Lengkap</label></b></font></td>
+                            <td><input type="text" id="nama" name="nama" size="45" required></td>
+                        </tr>
+                        <tr>
+                            <td><font color="#1e3a8a"><b><label for="email">Alamat Email</label></b></font></td>
+                            <td><input type="email" id="email" name="email" size="45" required></td>
+                        </tr>
+                        <tr>
+                            <!-- Input Radio Button untuk Gender Wajib -->
+                            <td><font color="#1e3a8a"><b>Jenis Kelamin</b></font></td>
+                            <td>
+                                <input type="radio" id="pria" name="jenis_kelamin" value="Laki-laki" required>
+                                <label for="pria">Laki-laki</label>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="radio" id="wanita" name="jenis_kelamin" value="Perempuan">
+                                <label for="wanita">Perempuan</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><font color="#1e3a8a"><b><label for="pesan">Pesan / Kesan</label></b></font></td>
+                            <td><textarea id="pesan" name="pesan" rows="7" cols="48" required></textarea></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <!-- Tombol Kirim & Reset -->
+                                <input type="submit" value="Kirim Data">
+                                &nbsp;&nbsp;
+                                <input type="reset" value="Bersihkan Form">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+                <br><br><br>
+                <!-- FOOTER -->
+                <hr size="1" color="#cbd5e1">
+                <p align="center"><font size="2" color="#94a3b8" face="Arial">&copy; 2026 Muhammad yuli setyawan. Dibuat dengan HTML Murni.</font></p>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
